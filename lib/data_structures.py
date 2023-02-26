@@ -86,11 +86,11 @@ def print_spiciest_foods(spicy_foods):
 # level of all the spicy foods in the array.
 
 def get_average_heat_level(spicy_foods):
-    # WHY DOESN'T THIS WORK?
+    heat_level = []
     for food in spicy_foods:
-        heat_level = [food.get('heat_level')]
+        heat_level.append(food.get('heat_level'))
     return sum(heat_level) / len(spicy_foods)
-
+    # OR
     # heat_levels = [food.get('heat_level') for food in spicy_foods]
     # return sum(heat_levels) / len(spicy_foods)
     # OR
